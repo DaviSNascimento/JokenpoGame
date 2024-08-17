@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Jogo de Jokenpo</h1>
+        <div id="gameMode">
+            <button id="infiniteMode">Modo Infinito</button>
+            <button id="scoreMode">Modo de Pontuação</button>
+        </div>
+        <div id="gameArea" style="display: none;">
+            <p>Escolha sua jogada:</p>
+            <button class="choice" data-choice="rock">Pedra</button>
+            <button class="choice" data-choice="paper">Papel</button>
+            <button class="choice" data-choice="scissors">Tesoura</button>
+        </div>
+        <div id="resultArea" style="display: none;">
+            <p id="resultMessage"></p>
+            <button id="playAgain">Jogar novamente</button>
+        </div>
+        <div id="statistics" style="display: none;">
+            <h2>Estatísticas</h2>
+            <p>Partidas Jogadas: <span id="gamesPlayed">0</span></p>
+            <p>Vitórias do Computador: <span id="computerWins">0</span></p>
+            <p>Vitórias do Jogador: <span id="playerWins">0</span></p>
+            <p>Empates: <span id="ties">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

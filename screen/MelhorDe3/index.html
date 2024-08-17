@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô - Melhor de 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://icons8.com/icon/MJiKZYhELSHA/prize" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Jokenpo</h1>
+        <h2 id="subtitle">Melhor de 3</h2>
+        <p id="subtitle">Escolha sua jogada:</p>
+        <div class="containerGame">
+            <div id="areaJogo">
+                <button class="buttons choice" data-choice="pedra">Pedra ✊</button>
+                <button class="buttons choice" data-choice="papel">Papel ✋</button>        
+                <button class="buttons choice" data-choice="tesoura">Tesoura ✌️</button>
+            </div>
+
+            <div id="areaResultado" style="display: none"> <!--add style="display: none" -->
+                <p id="resultMessage"></p>
+                <button class="buttons especial" id="playAgain">Jogar Novamente</button>
+            </div>
+        </div>    
+        <div id="pontuacao">
+            <p>Pontuação player: <span id="playerPontos">0</span></p>
+            <p>Pontuação AI: <span id="AIPontos">0</span></p>
+        </div>
+        <div id="stats">
+            <p>Partidas: <span id="numPartidas">0</span></p>
+            <p>Vitorias: <span id="numVitorias">0</span></p>
+            <p>Derrotas: <span id="numDerrotas">0</span></p>
+            <p>Empates: <span id="numEmpates">0</span></p>
+        </div>
+        <div id="resultadoFinal" >
+            <span id="resultPlayer"></span>
+        </div>
+        <a class="buttons sairBtn" id="sairJogo" href="../Main/index.html">Sair</a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
